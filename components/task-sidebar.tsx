@@ -94,7 +94,7 @@ interface GitHubRepoInfo {
 }
 
 export function TaskSidebar({ tasks, width = 288 }: TaskSidebarProps) {
-  const pathname = usePathname()
+  const pathname = usePathname() ?? ''
   const { refreshTasks, toggleSidebar } = useTasks()
   const session = useAtomValue(sessionAtom)
   const githubConnection = useAtomValue(githubConnectionAtom)
