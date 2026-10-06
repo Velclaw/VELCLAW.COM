@@ -7,6 +7,8 @@ services:
     buildCommand: pnpm install --no-frozen-lockfile && pnpm build
     startCommand: pnpm start
     autoDeploy: true
+    domains:
+      - velclaw.dev
     envVars:
       - key: NODE_VERSION
         value: "22.14.0"
