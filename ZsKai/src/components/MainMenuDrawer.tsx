@@ -382,7 +382,7 @@ export const MainMenuDrawer: React.FC<MainMenuDrawerProps> = ({
                               <FileCode className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
                               <span className="font-mono text-xs truncate font-bold">{file.name}</span>
                             </div>
-                            <span className="text-[10px] text-neutral-400 font-mono font-semibold">{file.size}</span>
+                            <span className="text-[10px] text-neutral-400 font-mono font-semibold">{file.content ? `${file.content.length} B` : ''}</span>
                           </button>
                         ))}
                       </div>
